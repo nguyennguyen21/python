@@ -1,0 +1,1 @@
+        return (self.l +self.w)*2
