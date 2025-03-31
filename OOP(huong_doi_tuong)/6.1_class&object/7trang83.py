@@ -5,7 +5,7 @@ class PhanSo:
         phanso.tu = tu_so 
         phanso.mau = mau_so 
     
-    def NhapPhanSo(phanso):
+    def NhapPhanSo(phanso): 
         phanso.tu = int(input("nhập tử số :"))
         phanso.mau = int(input("nhập mẫu số :"))
         return phanso.tu,phanso.mau
@@ -15,7 +15,7 @@ class PhanSo:
         phanso.tu //= gcd
         phanso.mau //= gcd
         print(f"Phân số rút gọn: {phanso.tu}/{phanso.mau}")
-        return PhanSo(phanso.tu,phanso.mau)
+        return gcd
     def cong(phanso,phan_so_khac):
         tu = phanso.tu * phan_so_khac.mau + phan_so_khac.tu * phanso.mau
         mau = phanso.mau * phan_so_khac.mau
